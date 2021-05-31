@@ -1,0 +1,77 @@
+/*
+  Fonts
+  Variables
+  General
+  Images
+  Container
+  Header
+  Main
+  footer
+  Media Queries
+  Notes
+*/
+/*--------->|| FONTS ||--------<
+---------------------------------*/
+
+/*--------->|| VARIABLES ||--------<
+---------------------------------*/
+:root {
+  --blue: #1877f2;
+  --blue-hover: #166fe5;
+  --blue-links: #385898;
+  --green: #42b72a;
+  --green-hover: #36a420;
+  --light-grey: #f0f2f5;
+  --white: #FFFFFF;
+
+}
+
+/*--------->|| GENERAL STYLES ||--------<
+---------------------------------*/
+
+/*--------->|| IMAGES ||--------<
+---------------------------------*/
+
+/*--------->|| CONTAINER ||--------<
+---------------------------------*/
+
+/*--------->|| HEADER ||--------<
+---------------------------------*/
+
+/*--------->|| MAIN ||--------<
+---------------------------------*/
+
+/*--------->|| FOOTER ||--------<
+---------------------------------*/
+
+/*--------->|| MEDIA QUERIES ||--------<
+---------------------------------*/
+/*This rule is just for the projects to adapt to screen better*/
+@media (max-width: 1086px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 481px) {
+
+}
+
+@media (max-width: 385px) {
+
+}
+
+/*--------->NOTES<-----------*/
+/*
+- Para centrar algo horizontalmente en navegadores modernos, usa display:
+ flex; justify-content: center;
+- Sin embargo, en navegadores antiguos como IE8-9, flexbox no está disponible.
+Para poder centrar un elemento horizontalmente con respecto a su contenedor,
+usa margin: 0 auto;
+*/

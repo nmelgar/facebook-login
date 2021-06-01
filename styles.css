@@ -12,7 +12,6 @@
 */
 /*--------->|| FONTS ||--------<
 ---------------------------------*/
-
 /*--------->|| VARIABLES ||--------<
 ---------------------------------*/
 :root {
@@ -23,22 +22,26 @@
   --green-hover: #36a420;
   --light-grey: #f0f2f5;
   --white: #FFFFFF;
-
 }
 
 /*--------->|| GENERAL STYLES ||--------<
 ---------------------------------*/
+body {
+  background: #f0f2f5;
+  height: 100vh;
+  margin: 0;
+}
 
 /*--------->|| IMAGES ||--------<
 ---------------------------------*/
-#facebook-image-1{
+#facebook-image-1 {
   max-width: 100%;
   height: auto;
 }
 
 /*--------->|| CONTAINER ||--------<
 ---------------------------------*/
-.container{
+.container {
   margin: 0 auto;
   max-width: 960px;
   text-align: center;
@@ -47,35 +50,58 @@
 
 /*--------->|| HEADER ||--------<
 ---------------------------------*/
-
 /*--------->|| MAIN ||--------<
 ---------------------------------*/
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 70vh;
+  align-items: center;
+}
+
+.information {
+  justify-self: start;
+}
+
+.login-input {
+  width: 60%;
+  justify-self: end;
+  border: 2px solid black;
+  padding: 10%;
+  height: 35%;
+}
 
 /*--------->|| FOOTER ||--------<
 ---------------------------------*/
+footer {
+  display: flex;
+  background: white;
+  height: 30vh;
+}
+
+.container-footer {
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: left;
+
+}
+
+footer ul li {
+  display: inline-block;
+}
 
 /*--------->|| MEDIA QUERIES ||--------<
 ---------------------------------*/
 /*This rule is just for the projects to adapt to screen better*/
-@media (max-width: 1086px) {
+@media (max-width: 1086px) {}
 
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {}
 
-}
+@media (max-width: 481px) {}
 
-@media (max-width: 640px) {
-
-}
-
-@media (max-width: 481px) {
-
-}
-
-@media (max-width: 385px) {
-
-}
+@media (max-width: 385px) {}
 
 /*--------->NOTES<-----------*/
 /*

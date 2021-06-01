@@ -12,6 +12,9 @@
 */
 /*--------->|| FONTS ||--------<
 ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 /*--------->|| VARIABLES ||--------<
 ---------------------------------*/
 :root {
@@ -32,20 +35,35 @@ body {
   margin: 0;
 }
 
-/*--------->|| IMAGES ||--------<
----------------------------------*/
-#facebook-image-1 {
-  max-width: 100%;
-  height: auto;
+h1 {
+  font-family: 'Mulish', sans-serif;
+  color: var(--blue);
+  text-align: left;
+  font-weight: 900;
+  font-size: 4em;
+  letter-spacing: -3px;
+  margin: 0;
 }
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/*--------->|| IMAGES ||--------<
+---------------------------------*/
+/* #facebook-image-1 {
+  max-width: 100%;
+  height: auto;
+} */
 /*--------->|| CONTAINER ||--------<
 ---------------------------------*/
 .container {
   margin: 0 auto;
   max-width: 960px;
   text-align: center;
-
 }
 
 /*--------->|| HEADER ||--------<
@@ -53,22 +71,89 @@ body {
 /*--------->|| MAIN ||--------<
 ---------------------------------*/
 main {
+  align-items: center;
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 70vh;
-  align-items: center;
+  height: 75vh;
 }
 
 .information {
-  justify-self: start;
+  /* justify-self: start; */
+  /* align-self: center; */
 }
 
+form {}
+
 .login-input {
-  width: 60%;
+  background: white;
+  border-radius: 2%;
+  box-shadow: 0 0px 3px grey;
+  height: 45%;
   justify-self: end;
-  border: 2px solid black;
-  padding: 10%;
-  height: 35%;
+  padding: 2% 5% 10% 5%;
+  width: 70%
+}
+
+input[type=email] {
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  height: 3em;
+  width: 100%;
+  /*These 2 values are to show a left space when writing*/
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: #c3c6ca;
+  font-size: 1em;
+}
+
+input[type=text] {
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  height: 3em;
+  width: 100%;
+  /*These 2 values are to show a left space when writing*/
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: #c3c6ca;
+  font-size: 1em;
+}
+
+input[type=submit] {
+  color: white;
+  background: var(--blue);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  height: 3em;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background: var(--blue-hover);
+}
+
+input[type=email]:focus {
+  outline: 1px solid var(--blue);
+  /*Color of text to show when the user writes*/
+  color: black;
+}
+
+input[type=text]:focus {
+  outline: 1px solid var(--blue);
+  /*Color of text to show when the user writes*/
+  color: black;
+}
+
+button {
+  background: var(--green);
+  border: none;
+  color: white;
+  margin: 0 auto;
+  padding: 0 22px;
+  font-size: inherit;
+  font-weight: bold;
+  height: 3em;
 }
 
 /*--------->|| FOOTER ||--------<
@@ -76,14 +161,17 @@ main {
 footer {
   display: flex;
   background: white;
-  height: 30vh;
+  height: 25vh;
 }
 
 .container-footer {
   margin: 0 auto;
   max-width: 960px;
   text-align: left;
+}
 
+footer ul {
+  padding-left: 0;
 }
 
 footer ul li {

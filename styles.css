@@ -46,10 +46,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
   text-align: left;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 /*--------->|| IMAGES ||--------<
@@ -131,6 +130,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background: var(--blue-hover);
+  cursor: pointer;
 }
 
 input[type=email]:focus {
@@ -145,15 +145,36 @@ input[type=text]:focus {
   color: black;
 }
 
+.login-input p a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.login-input p a:hover {
+  text-decoration: underline;
+}
+
+#line-divides {
+  border-bottom: 1px solid #dadde1;
+  margin: 20px 16px;
+  text-align: center;
+}
+
 button {
   background: var(--green);
   border: none;
+  border-radius: 6px;
   color: white;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 0 22px;
   font-size: inherit;
   font-weight: bold;
   height: 3em;
+}
+
+button:hover {
+  background: var(--green-hover);
+  cursor: pointer;
 }
 
 /*--------->|| FOOTER ||--------<
@@ -170,20 +191,90 @@ footer {
   text-align: left;
 }
 
+#line-divides-footer {
+  border-bottom: 1px solid #dadde1;
+  margin: 0 5% 0 0;
+}
+
 footer ul {
   padding-left: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 footer ul li {
   display: inline-block;
+  padding-right: 0.8em;
+  font-size: 12px;
+}
+
+footer ul li a {
+  color: #385898;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+#copyright {
+  color: #737373;
+  font-size: 12px;
 }
 
 /*--------->|| MEDIA QUERIES ||--------<
 ---------------------------------*/
 /*This rule is just for the projects to adapt to screen better*/
-@media (max-width: 1086px) {}
+@media (max-width: 1024px) {
+  .information {
+    width: 100%;
+    margin-left: 20px;
+  }
 
-@media (max-width: 768px) {}
+  .login-input {
+    margin-right: 20px;
+    height: 45%;
+  }
+
+  #crear-cuenta {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 828px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 4em;
+    letter-spacing: -3px;
+    margin: 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: normal;
+    width: 50%;
+  }
+
+  .login-input {
+    margin-right: 0;
+    width: 60%;
+  }
+}
 
 @media (max-width: 640px) {}
 

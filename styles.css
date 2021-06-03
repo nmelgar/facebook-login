@@ -239,7 +239,7 @@ footer ul li a:hover {
     margin-bottom: 20px;
   }
 
-  .container-footer{
+  .container-footer {
     margin: 0 20px 0 20px;
   }
 }
@@ -281,7 +281,7 @@ footer ul li a:hover {
     width: 40%;
   }
 
-  footer{
+  footer {
     margin-top: 20px;
     padding-bottom: 2em;
   }
@@ -291,8 +291,8 @@ footer ul li a:hover {
   .login-input {
     width: 45%;
   }
-  footer{
 
+  footer {
     padding-bottom: 3em;
   }
 }
@@ -306,15 +306,13 @@ footer ul li a:hover {
     width: 65%;
   }
 
-  footer{
+  footer {
     padding-bottom: 6em;
   }
 }
 
 @media (max-width: 481px) {
-  .login-input {
-    
-  }
+  .login-input {}
 }
 
 @media (max-width: 385px) {}

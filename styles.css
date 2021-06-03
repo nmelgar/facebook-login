@@ -90,7 +90,7 @@ form {}
   height: 45%;
   justify-self: end;
   padding: 2% 5% 10% 5%;
-  width: 70%
+  width: 70%;
 }
 
 input[type=email] {
@@ -238,6 +238,10 @@ footer ul li a:hover {
   #crear-cuenta {
     margin-bottom: 20px;
   }
+
+  .container-footer{
+    margin: 0 20px 0 20px;
+  }
 }
 
 @media (max-width: 828px) {
@@ -254,6 +258,8 @@ footer ul li a:hover {
     align-items: center;
     text-align: center;
     margin-bottom: 1em;
+    margin-left: 0;
+    margin-top: 2em;
   }
 
   h1 {
@@ -272,13 +278,44 @@ footer ul li a:hover {
 
   .login-input {
     margin-right: 0;
-    width: 60%;
+    width: 40%;
+  }
+
+  footer{
+    margin-top: 20px;
+    padding-bottom: 2em;
   }
 }
 
-@media (max-width: 640px) {}
+@media (max-width: 640px) {
+  .login-input {
+    width: 45%;
+  }
+  footer{
 
-@media (max-width: 481px) {}
+    padding-bottom: 3em;
+  }
+}
+
+@media (max-width: 548px) {
+  .login-input {
+    width: 60%;
+  }
+
+  h2 {
+    width: 65%;
+  }
+
+  footer{
+    padding-bottom: 6em;
+  }
+}
+
+@media (max-width: 481px) {
+  .login-input {
+    
+  }
+}
 
 @media (max-width: 385px) {}
 
